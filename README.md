@@ -23,3 +23,7 @@ Local build: `cmake --preset windows-x64` then `cmake --build --preset windows-x
 ## License
 
 GPL-2.0-or-later. The transition code is a fork of OBS Studio's `transition-stinger.c`.
+
+## Known limitation
+
+In Studio Mode, OBS disables the T-bar for its built-in Stinger by checking the transition's id. It can't recognise this plugin's transition, so avoid dragging the T-bar while Stinger (Volume) is selected and use the Transition button instead.
